@@ -1,8 +1,6 @@
 from flask import Blueprint
 
-from app.libs.my_print import MyPrint
-
-api = MyPrint('check')
+api = Blueprint('check', __name__, url_prefix='/check')
 
 
 @api.route('/ping')

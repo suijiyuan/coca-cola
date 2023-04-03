@@ -4,7 +4,7 @@ from app.api import create_blueprint_v1
 
 
 def register_blueprints(app):
-    app.register_blueprint(create_blueprint_v1(), url_prefix='/v1')
+    app.register_blueprint(create_blueprint_v1())
 
 
 def create_app():
