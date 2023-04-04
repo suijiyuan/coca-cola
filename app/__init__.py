@@ -9,6 +9,6 @@ def register_blueprints(app):
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('app.config.setting')
+    app.config.from_pyfile('config/setting.py')
     register_blueprints(app)
     return app
