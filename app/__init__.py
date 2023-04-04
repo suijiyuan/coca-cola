@@ -1,10 +1,10 @@
 from flask import Flask
 
-from app.api import create_blueprint_v1
+from app.api import register_blueprints_v1
 
 
 def register_blueprints(app):
-    app.register_blueprint(create_blueprint_v1())
+    register_blueprints_v1(app)
 
 
 def create_app():
