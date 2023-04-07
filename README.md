@@ -22,6 +22,6 @@ sudo docker run -it -p 8000:8000 --rm --name coca-cola coca-cola
 ## How to use it
 
 ```shell
-curl 127.0.0.1:5000/v1/check/ping
+curl 127.0.0.1:8000/v1/check/ping
 # expected response is 'pong'
 ```
