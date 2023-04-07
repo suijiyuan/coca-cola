@@ -16,7 +16,7 @@ sudo dnf config-manager \
  --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce
 sudo docker build -t coca-cola .
-sudo docker run -it -p 5000:5000 --rm --name coca-cola coca-cola
+sudo docker run -it -p 8000:8000 --rm --name coca-cola coca-cola
 ```
 
 ## How to use it
