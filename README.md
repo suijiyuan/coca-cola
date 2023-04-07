@@ -4,15 +4,16 @@ Just for fun.
 
 ## Environment
 
+| Software         | Version            |
+|------------------|--------------------|
+| Operation System | Rockey Linux 9 x64 |
+| Docker           | 23.0.2             |
+
 ## How to install it
 
 ```shell
-sudo dnf install python3
-pip install -r requirements.txt
-python main.py
-```
-
-```shell
+sudo dnf config-manager \
+ --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce
 sudo docker build -t coca-cola .
 sudo docker run -it -p 5000:5000 --rm --name coca-cola coca-cola
